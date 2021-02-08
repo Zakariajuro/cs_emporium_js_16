@@ -16142,7 +16142,7 @@ p.promo {
 }
 
 .divgris {
-  background-color: #faf9f9;
+  background-color: #f3f3f3;
 }
 
 .divgris:hover {
@@ -16164,6 +16164,23 @@ p.promo {
 
 .icon {
   font-size: 40px;
+}
+
+.pfooter {
+  color: #424141;
+}
+
+.lifooter2 {
+  color: #424141;
+  list-style: none;
+}
+
+.btnpill {
+  background-color: #636262;
+}
+
+.divfin {
+  background-color: black;
 }
 
 /*# sourceMappingURL=style.css.map */
