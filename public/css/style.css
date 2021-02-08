@@ -16050,13 +16050,59 @@ h3 {
     border-color: #dee2e6;
   }
 }
-.nav {
-  display: flex;
-  justify-content: center;
+header h1 {
+  text-align: center;
 }
-.nav ul {
+header .nav {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+header .nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  align-items: center;
+}
+header .nav ul li {
+  display: flex;
+  margin: 10px;
+  align-items: center;
+}
+header .nav #butBlanc {
+  width: 5px;
+  height: 20px;
+  background-color: white;
+  margin-right: 5px;
+}
+header .nav #butNoir {
+  width: 5px;
+  height: 20px;
+  background-color: black;
+  margin-right: 5px;
+}
+
+.sect1div {
+  background-color: #faf9f9;
+  margin-top: 5%;
+}
+
+.section2 {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.textImgs2 {
+  z-index: 2;
+  top: 35%;
+  left: 33%;
+}
+.textImgs2 .h4s2 {
+  color: white;
+}
+.textImgs2 .hrs2 {
+  height: 2px;
+  background-color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
