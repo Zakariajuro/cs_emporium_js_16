@@ -15887,3 +15887,22 @@ header .nav #butNoir {
   justify-content: center;
   align-items: center;
 }
+
+.carou {
+  overflow-x: hidden;
+  display: flex;
+  padding-left: 10%;
+}
+
+p.promo {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  margin: 0px 0px 0px 0px;
+}
+
+.txtBarre {
+  text-decoration: line-through;
+}
