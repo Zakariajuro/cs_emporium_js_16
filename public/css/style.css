@@ -16136,4 +16136,34 @@ p.promo {
   text-decoration: line-through;
 }
 
+.section6 {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.divgris {
+  background-color: #faf9f9;
+}
+
+.divgris:hover {
+  background-color: #df3f3f;
+}
+.divgris:hover i {
+  color: white;
+}
+.divgris:hover p {
+  color: white;
+}
+.divgris:hover h4 {
+  color: white;
+}
+.divgris:hover button {
+  color: black;
+  background-color: white;
+}
+
+.icon {
+  font-size: 40px;
+}
+
 /*# sourceMappingURL=style.css.map */
