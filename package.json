@@ -1,7 +1,6 @@
 {
   "name": "Mon-emporum-Zak",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,6 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.2",
     "bootstrap": "^4.6.0"
-  }
+  },
+  "devDependencies": {},
+  "description": ""
 }
