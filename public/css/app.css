@@ -15875,3 +15875,15 @@ header .nav #butNoir {
   height: 2px;
   background-color: white;
 }
+
+.section4 {
+  background-image: url("../img/cta-bg.jpg");
+  background-position: bottom;
+  background-attachment: fixed;
+  width: 100%;
+  height: 500px;
+  margin-bottom: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
