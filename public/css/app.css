@@ -15814,6 +15814,13 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+header {
+  background-color: white;
+  z-index: 1;
+  position: sticky;
+  top: 0;
+}
+
 header h1 {
   text-align: center;
 }

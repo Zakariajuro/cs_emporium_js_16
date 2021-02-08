@@ -16050,6 +16050,13 @@ h3 {
     border-color: #dee2e6;
   }
 }
+header {
+  background-color: white;
+  z-index: 1;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
 header h1 {
   text-align: center;
 }
