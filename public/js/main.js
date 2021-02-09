@@ -21,3 +21,23 @@ buttonBlanc.addEventListener('click', () => {
 });
 })
 
+// FONCTIONNALITE JS BUTTON CONNEXION
+
+let connect = document.querySelector("#connexion")
+let menuCo = document.querySelector(".menuCo")
+
+connect.addEventListener('click', () => {
+    menuCo.className= ("menuCo dropdown-menu col-12 text-center d-none", "menuCo dropdown-menu col-12 text-center d-block")
+    if (menuCo.className == "menuCo dropdown-menu col-12 text-center d-block") {
+        connect.addEventListener('click', () => {
+            menuCo.className= ("menuCo dropdown-menu col-12 text-center d-block", "menuCo dropdown-menu col-12 text-center d-none")
+            if (menuCo.className == "menuCo dropdown-menu col-12 text-center d-none") {
+                connect.addEventListener('click', () => {
+                    menuCo.className= ("menuCo dropdown-menu col-12 text-center d-none", "menuCo dropdown-menu col-12 text-center d-block")
+                })
+            }
+        })
+    }
+})
+
+
