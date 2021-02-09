@@ -11,7 +11,7 @@
     <header>
         <h1>EMPORIUM.</h1>
         <nav class="nav">
-            <ul>
+            <ul class="d-none d-lg-flex mr-2">
                 <li>HOME</li>
                 <li>PRODUCT</li>
                 <li>BLOG</li>
@@ -19,6 +19,20 @@
                 <li>ABOUT</li>
                 <li>CONTACT</li>
             </ul>
+            <div class="dropdown d-lg-none">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Menu
+                </a>
+              
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#">HOME</a>
+                  <a class="dropdown-item" href="#">PRODUCT</a>
+                  <a class="dropdown-item" href="#">BLOG</a>
+                  <a class="dropdown-item" href="#">ELEMENTS</a>
+                  <a class="dropdown-item" href="#">ABOUT</a>
+                  <a class="dropdown-item" href="#">CONTACT</a>
+                </div>
+            </div>
             <button id="butBlanc"></button>
             <button id="butNoir"></button>
             <button>connexion</button>
@@ -27,18 +41,18 @@
  <!-- SECTION 1 -->
     <section class="section1">
         <div class="sect1div container-fluid">
-            <div class="row">
-                <div class="col-2"></div>
-                <div class="col-4">
+            <div class="row d-flex justify-content-center">
+                <div class="d-none col-lg-2"></div>
+                <div class="col-12 col-lg-4">
                     <h2 class="text-danger">SHOP AT</h2>
                     <h1>EMPORIUM.</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis maiores illum repellendus dicta amet quidem, vitae labore</p>
                     <button type="button" class="btn btn-danger rounded-pill">Danger</button>
                 </div>
-                <div class="col-3">
+                <div class="col-12 col-lg-3">
                     <img class="mw-100" src="./public/img/slider-1.jpg" alt="">
                 </div>
-                <div class="col-3"></div>
+                <div class="d-none col-lg-3"></div>
             </div>
         </div>
     </section>
@@ -47,27 +61,29 @@
     <section class="section2">
         <div class="container">
             <div class="row">
-                <div class="divzoom col-4 position-relative">
+                <div class="divzoom col-12 col-md-6 col-lg-4 position-relative">
                     <img class="imgzoom mw-100" src="./public/img/services/service-1.jpg" alt="">
                     <div class="textImgs2 position-absolute"> 
                         <h4 class="h4s2">Living Room</h4>
                         <hr class="hrs2">
                     </div>
                 </div>
-                <div class="divzoom col-4">
+                <div class="divzoom col-12 col-md-6 col-lg-4">
                     <img class="imgzoom mw-100" src="./public/img/services/service-2.jpg" alt="">
                     <div class="textImgs2 position-absolute"> 
                         <h4 class="h4s2">Sales Items</h4>
                         <hr class="hrs2">
                     </div>
                 </div>
-                <div class="divzoom col-4">
+                <div class="d-none col-md-3"></div>
+                <div class="divzoom col-12 col-md-6 col-lg-4">
                     <img class="imgzoom mw-100" src="./public/img/services/slider-3.jpg" alt="">
                     <div class="textImgs2 position-absolute"> 
                         <h4 class="h4s2">Colthes</h4>
                         <hr class="hrs2">
                     </div>
                 </div>
+                <div class="d-none col-md-3"></div>
             </div>
         </div>
     </section>
@@ -77,7 +93,7 @@
         <h3 class="text-center mb-5">Recents Product</h3>
         <div class="container">
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-md-6 col-lg-4">
                     <div class="image-pro">
                         <img src="./public/img/products_mini/product-luxry-sofa.jpg" alt="">
                         <div class="cache row container">
@@ -96,7 +112,7 @@
                         <span class="prix">$600.00</span>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-md-6 col-lg-4">
                     <div class="image-pro">
                         <img src="./public/img/products_mini/product-gloves.jpg" alt="">
                         <div class="cache row container">
@@ -123,7 +139,7 @@
                 </div>
     
     
-                <div class="col-lg-4">
+                <div class="col-md-6 col-lg-4">
                     <div class="image-pro">
                         <img src="./public/img/products_mini/product-cups.jpg" alt="">
                         <div class="cache row container">
@@ -144,7 +160,7 @@
                 </div>
     
     
-                <div class="col-lg-4">
+                <div class="col-md-6 col-lg-4">
                     <div class="image-pro">
                         <img src="./public/img/products_mini/product-bag.jpg" alt="">
                         <div class="cache row container">
@@ -171,7 +187,7 @@
                 </div>
     
     
-                <div class="col-lg-4">
+                <div class="col-md-6 col-lg-4">
                     <div class="image-pro">
                         <img src="./public/img/products_mini/product-tshitr.jpg" alt="">
                         <div class="cache row container">
@@ -191,7 +207,7 @@
                     </div>
                 </div>
     
-                <div class="col-lg-4">
+                <div class="col-md-6 col-lg-4">
                     <div class="image-pro">
                         <img src="./public/img/products_mini/product-plates.jpg" alt="">
                         <div class="cache row container">
@@ -213,7 +229,7 @@
     
     
     
-                <div class="col-lg-4">
+                <div class="col-md-6 col-lg-4">
                     <div class="image-pro">
                         <img src="./public/img/products_mini/product-modern-sofa.jpg" alt="">
                         <div class="cache row container">
@@ -233,7 +249,7 @@
                     </div>
                 </div>
     
-                <div class="col-lg-4">
+                <div class="col-md-6 col-lg-4">
                     <div class="image-pro">
                         <img src="./public/img/products_mini/product-bed.jpg" alt="">
                         <div class="cache row container">
@@ -253,7 +269,7 @@
                     </div>
                 </div>
     
-                <div class="col-lg-4">
+                <div class="col-md-6 col-lg-4">
                     <div class="image-pro">
                         <img src="./public/img/products_mini/product-shoes.jpg" alt="">
                         <div class="cache row container">
@@ -296,58 +312,13 @@
     <!-- SECTION 5 -->
     <section class="section5 mb-5">
         <h2 class="text-center mb-5">Hot Fashion Product</h2>
-        <!-- <div class="carou container">
-            <div class="row">
-                <div class="col-2">
-                    <img class="mw-100" src="./public/img/products/product-bag-2-700x500.jpg" alt="">
-                    <p class="text-center my-3">luxury sofa</p>
-                    <p class="text-center text-danger">$600,00</p>
-                </div>
-                <div class="col-2">
-                    <img class="mw-100" src="./public/img/products/product-bag-700x500.jpg" alt="">
-                    <p class="text-center my-3">leather gloves</p>
-                    <div class="d-flex justify-content-center">
-                        <p class="border rounded-circle bg-danger mx-2">SALES!</p>
-                        <strike class="mx-2">$34,00</strike>
-                        <p class=" text-danger">$27,00</p>
-                    </div>
-                </div>
-                <div class="col-2">
-                    <img class="mw-100" src="./public/img/products/product-jacket-700x500.jpg" alt="">
-                    <p class="text-center my-3">Colorful Brawl</p>
-                    <p class="text-center  text-danger">$18,00</p>
-                </div>
-
-                <div class="col-2">
-                    <img class="mw-100" src="./public/img/products/product-shoes-700x500.jpg" alt="">
-                    <p class="text-center my-3">Woman Bag</p>
-                    <div class="d-flex justify-content-center">
-                        <p class="border rounded-circle bg-danger mx-2">SALES!</p>
-                        <strike class="mx-2">$450,00</strike>
-                        <p class=" text-danger">$350,00</p>
-                    </div>
-                </div>
-                <div class="col-2">
-                    <img class="mw-100" src="./public/img/products/product-tshitr-700x500.jpg" alt="">
-                    <p class="text-center my-3">Minimal T-shirt</p>
-                    <p class="text-center text-danger">$15,00</p>
-                </div>
-                <div class="col-2">
-                    <img class="mw-100" src="./public/img/products/product-tshitr-white-700x500.jpg" alt="">
-                    <p class="text-center my-3">Bed Linen</p>
-                    <p class="text-center text-danger">$79,00</p>
-                </div>
-            </div>
-        </div> -->
-
-
         <div class="carou container">
-            <div class="divimgs5 col-3 mr-2">
+            <div class="divimgs5 col-12 col-md-6 col-lg-3 mr-2">
                 <img class="mw-100" src="./public/img/products/product-bag-2-700x500.jpg" alt="">
                 <p class="text-center my-3">luxury sofa</p>
                 <p class="text-center text-danger">$600,00</p>
             </div>
-            <div class="divimgs5 col-3 mr-2">
+            <div class="divimgs5 col-12 col-md-6 col-lg-3 mr-2">
                 <img class="mw-100" src="./public/img/products/product-bag-700x500.jpg" alt="">
                 <p class="text-center my-3">leather gloves</p>
                 <p class="promo border bg-danger text-center">SALES!</p>
@@ -356,13 +327,13 @@
                     <p class=" text-danger">$27,00</p>
                 </div>
             </div>
-            <div class="divimgs5 col-3 mr-2">
+            <div class="divimgs5 col-12 col-md-6 col-lg-3 mr-2">
                 <img class="mw-100" src="./public/img/products/product-jacket-700x500.jpg" alt="">
                 <p class="text-center my-3">Colorful Brawl</p>
                 <p class="text-center  text-danger">$18,00</p>
             </div>
 
-            <div class="divimgs5 col-3 mr-2">
+            <div class="divimgs5 col-12 col-md-6 col-lg-3 mr-2">
                 <img class="mw-100" src="./public/img/products/product-shoes-700x500.jpg" alt="">
                 <p class="text-center my-3">Woman Bag</p>
                 <p class="promo bg-danger text-center">SALES!</p>
@@ -371,27 +342,27 @@
                     <p class=" text-danger">$350,00</p>
                 </div>
             </div> 
-            <div class="divimgs5 col-3 mr-2">
+            <div class="divimgs5 col-12 col-md-6 col-lg-3 mr-2">
                 <img class="mw-100" src="./public/img/products/product-tshitr-700x500.jpg" alt="">
                 <p class="text-center my-3">Minimal T-shirt</p>
                 <p class="text-center text-danger">$15,00</p>
             </div>
-            <div class="divimgs5 col-3 mr-2">
+            <div class="divimgs5 col-12 col-md-6 col-lg-3 mr-2">
                 <img class="mw-100" src="./public/img/products/product-tshitr-white-700x500.jpg" alt="">
                 <p class="text-center my-3">Bed Linen</p>
                 <p class="text-center text-danger">$79,00</p>
             </div>
-            <div class="divimgs5 col-3 mr-2">
+            <div class="divimgs5 col-12 col-md-6 col-lg-3 mr-2">
                 <img class="mw-100" src="./public/img/products_mini/product-plates.jpg" alt="">
                 <p class="text-center my-3">Bed Linen</p>
                 <p class="text-center text-danger">$79,00</p>
             </div>
-            <div class="divimgs5 col-3 mr-2">
+            <div class="divimgs5 col-12 col-md-6 col-lg-3 mr-2">
                 <img class="mw-100" src="./public/img/products_mini/product-shoes.jpg" alt="">
                 <p class="text-center my-3">Bed Linen</p>
                 <p class="text-center text-danger">$79,00</p>
             </div>
-            <div class="divimgs5 col-3 mr-2">
+            <div class="divimgs5 col-12 col-md-6 col-lg-3 mr-2">
                 <img class="mw-100" src="./public/img/products_mini/product-tshitr.jpg" alt="">
                 <p class="text-center my-3">Bed Linen</p>
                 <p class="text-center text-danger">$79,00</p>
@@ -403,19 +374,19 @@
     <section class="section6">
         <div class="container">
             <div class="row d-flex justify-content-center">
-                <div class="divgris col-4 text-center">
+                <div class="divgris col-12 col-md-6 col-lg-4 text-center">
                     <i class="icon far fa-check-circle py-5"></i>
                     <h4>TRUSED BY 10.000+ CUSTOMER</h4>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias aliquid et cumque expedita consequatur fuga </p>
                     <button type="button" class="my-5 btn btn-secondary">Secondary</button>
                 </div>
-                <div class="divgris col-4 text-center">
+                <div class="divgris col-12 col-md-6 col-lg-4 text-center">
                     <i class="icon fas fa-plane-departure py-5"></i>
                     <h4>VERY FAST SHIPPING</h4>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias aliquid et cumque expedita consequatur fuga </p>
                     <button type="button" class="my-5 btn btn-secondary">Secondary</button>
                 </div>
-                <div class="divgris col-4 text-center">
+                <div class="divgris col-12 col-md-6 col-lg-4 text-center">
                     <i class="icon far fa-check-circle py-5"></i>
                     <h4>TRUSED BY 10.000+ CUSTOMER</h4>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias aliquid et cumque expedita consequatur fuga </p>
@@ -433,13 +404,13 @@
                 <div class="col-2">
 
                 </div>
-                <div class="col-3">
+                <div class="col-12 col-lg-3">
                     <h5 class="mb-4">ABOUT US</h5>
                     <p class="p">Lorem ipsum dolor sit amet consectetur</p>
                     <p class="p">Lorem ipsum dolor sit amet consectetur</p>
                     <p class="p">Lorem ipsum dolor sit amet consectetur</p>
                 </div>
-                <div class="col-3">
+                <div class="col-12 col-lg-3">
                     <h5 class="mb-4">REENT POST</h5>
                     <ul>
                         <li class="lifooter2">> Hello World</li>
@@ -448,7 +419,7 @@
                         <li class="lifooter2">> Lorem, ipsum dolor.</li>
                     </ul>
                 </div>
-                <div class="col-3">
+                <div class="col-12 col-lg-3">
                     <h5 class="mb-4">TAG CLOUD</h5>
                     <div class="butfoot col-12 col-lg-4 d-flex">
                         <button type="button" class="btnpill btn btn-outline-dark text-white rounded-pill mb-2">Restaurent</button>
@@ -476,5 +447,11 @@
                     </div>
     </footer>
     <script src="./public/js/main.js"></script>
+    <!-- script jquery -->
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <!-- script bootstrap -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
 </body>
 </html>
