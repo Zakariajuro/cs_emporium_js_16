@@ -16100,7 +16100,7 @@ header .nav #butNoir {
 }
 
 .textImgs2 {
-  z-index: 2;
+  z-index: 1;
   top: 35%;
   left: 33%;
 }
@@ -16110,6 +16110,73 @@ header .nav #butNoir {
 .textImgs2 .hrs2 {
   height: 2px;
   background-color: white;
+}
+
+.divzoom {
+  overflow: hidden;
+}
+.divzoom .imgzoom {
+  transition: 1s;
+}
+.divzoom .imgzoom:hover {
+  transform: scale(1.5);
+  transition: 1s;
+  overflow: hidden;
+}
+
+.image-pro {
+  overflow: hidden;
+}
+.image-pro img {
+  width: 100%;
+  transition: ease 1s;
+}
+.image-pro:hover img {
+  transform: scale(1.2);
+}
+.image-pro:hover .cache {
+  opacity: 0.7;
+}
+.image-pro:hover .cache a {
+  padding-bottom: 10px;
+}
+.image-pro .cache {
+  position: absolute;
+  bottom: 98px;
+  z-index: 3;
+  opacity: 0;
+  transition: 1s ease;
+}
+.image-pro .cache a {
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  transition: 1s ease;
+}
+.image-pro .cache a:first-child {
+  background-color: #dc3545;
+}
+.image-pro .cache a:last-child {
+  background-color: black;
+}
+
+.barre {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.prix {
+  text-decoration: none;
+  color: #dc3545;
+}
+
+.sale {
+  background-color: #dc3545;
+  color: white;
+  text-align: center;
+  font-size: 9px;
+  border-radius: 50%;
+  padding: 15px 3px;
 }
 
 .section4 {

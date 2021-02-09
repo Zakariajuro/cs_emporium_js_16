@@ -1,0 +1,67 @@
+// .divimgs3
+//     .ptitimgs3
+//         overflow: hidden
+//         .imgs3
+//             width: 100%
+//             transition: ease 1s
+//         .carreplus 
+//             display: none
+
+//         &:hover   
+//             .imgs3
+//                 position: relative
+//                 transition: 1s 
+//                 transform: scale(1.2)
+//                 width: 100%
+//             .carreplus 
+//                 display: flex
+//                 position: absolute
+//                 transition: 1s 
+//                 max-width: 100%
+//                 opacity: 0.7
+//                 bottom: 20%
+
+
+
+
+.image-pro
+    overflow: hidden
+    img
+        width: 100%
+        transition: ease 1s
+    &:hover
+        img
+            transform: scale(1.2)
+        .cache
+            opacity: 0.7
+            a
+                padding-bottom: 10px
+    .cache
+        position: absolute
+        bottom: 98px
+        z-index: 3
+        opacity: 0
+        transition: 1s ease
+        a
+            color: white
+            padding-top: 20px
+            padding-bottom: 0px
+            transition: 1s ease
+        a:first-child
+            background-color: $red
+        a:last-child
+            background-color: black
+.barre
+    text-decoration: line-through
+    color: gray
+.prix
+    text-decoration: none
+    color: $red
+.sale
+    background-color: $red
+    color: white
+    text-align: center
+    font-size: 9px
+    border-radius: 50%
+    padding: 15px 3px
+                
