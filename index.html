@@ -10,6 +10,7 @@
     <!-- HEADER  -->
     <header>
         <h1 class="hprinc d-block">EMPORIUM.</h1>
+        <!-- MA NAVBAR  -->
         <nav class="nav">
             <h1 class="hcacher d-none">EMPORIUM.</h1>
             <ul class="d-none d-lg-flex mr-2">
@@ -20,6 +21,7 @@
                 <li>ABOUT</li>
                 <li>CONTACT</li>
             </ul>
+            <!-- BUTTON DU MENU QUI APPARAIT EN Responsive -->
             <div class="dropdown d-lg-none">
                 <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Menu
@@ -37,30 +39,41 @@
             <button id="butBlanc"></button>
             <button id="butNoir"></button>
             <button id="connexion">connexion</button>
-            <div class="menuCo col-12 text-center px-17 dropdown-menu d-none">
-                <form class="px-4 py-3">
-                  <div class="form-group">
-                    <label for="exampleDropdownFormEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleDropdownFormPassword1">Password</label>
-                    <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
-                  </div>
-                  <div class="form-group">
-                    <div class="form-check">
-                      <input type="checkbox" class="form-check-input" id="dropdownCheck">
-                      <label class="form-check-label" for="dropdownCheck">
-                        Remember me
-                      </label>
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 bg-transparent"></div>
+                    <div class="col-4">
+                        <div class="menuCo mt-7 col-12 text-center dropdown-menu d-none">
+                            <form class="px-4 py-3">
+                                <div class="text-right">
+                                    <button class="butX bg-danger">X</button>
+                                </div>
+                              <div class="form-group">
+                                <label for="exampleDropdownFormEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                              </div>
+                              <div class="form-group">
+                                <label for="exampleDropdownFormPassword1">Password</label>
+                                <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                              </div>
+                              <div class="form-group">
+                                <div class="form-check">
+                                  <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                  <label class="form-check-label" for="dropdownCheck">
+                                    Remember me
+                                  </label>
+                                </div>
+                              </div>
+                              <button type="submit" class="btn btn-primary">Sign in</button>
+                            </form>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item mw-100" href="#">New around here? Sign up</a>
+                            <a class="dropdown-item" href="#">Forgot password?</a>
+                        </div>
                     </div>
-                  </div>
-                  <button type="submit" class="btn btn-primary">Sign in</button>
-                </form>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">New around here? Sign up</a>
-                <a class="dropdown-item" href="#">Forgot password?</a>
-              </div>
+                    <div class="col-4 bg-transparent"></div>
+                </div>
+            </div>
         </nav>
     </header>
  <!-- SECTION 1 -->
@@ -392,6 +405,11 @@
                 <p class="text-center my-3">Bed Linen</p>
                 <p class="text-center text-danger">$79,00</p>
             </div>
+        </div>
+        <div class="text-center">
+            <button class="bg-light"></button>
+            <button class="bg-light"></button>
+            <button class="bg-light"></button>
         </div>
     </section>
 
