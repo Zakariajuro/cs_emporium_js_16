@@ -20370,10 +20370,6 @@ h3 {
     border-color: #dee2e6;
   }
 }
-body {
-  overflow-x: hidden;
-}
-
 header {
   background-color: white;
   z-index: 2;
@@ -20383,6 +20379,7 @@ header {
 }
 header h1 {
   text-align: center;
+  font-family: poppins;
 }
 header .nav {
   display: flex;
@@ -20396,6 +20393,7 @@ header .nav ul {
   align-items: center;
 }
 header .nav ul .linav {
+  font-family: poppins;
   display: flex;
   margin: 10px;
   align-items: center;
@@ -20594,6 +20592,22 @@ p.promo {
 
 .divfin {
   background-color: black;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+p {
+  font-family: poppins;
+}
+
+h2 {
+  font-family: poppins;
+}
+
+h3 {
+  font-family: poppins;
 }
 
 /*# sourceMappingURL=style.css.map */
