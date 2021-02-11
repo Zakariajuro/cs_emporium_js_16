@@ -19458,6 +19458,10 @@ header .nav #butNoir {
   margin-right: 5px;
 }
 
+header .nav .connexion {
+  border-radius: 5px;
+}
+
 .sect1div {
   background-color: #faf9f9;
   margin-top: 5%;
