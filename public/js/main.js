@@ -1,3 +1,5 @@
+// const { Carousel } = require("bootstrap")
+
 // CIBLAGE DES ELEMENTS HTML
 let buttonNoir = document.querySelector("#butNoir")
 let buttonBlanc = document.querySelector("#butBlanc")
@@ -14,7 +16,7 @@ let linav = document.querySelectorAll(".linav")
 console.log(buttonNoir);
 
 // NOIR 
-buttonNoir.addEventListener('click', () => {
+buttonNoir.addEventListener('click', (bN) => {
     document.body.style.backgroundColor= "black"
     hPrincip.className=("hprinc d-block mb-0", "hprinc d-block mb-0 bg-dark text-light")
     psect1.classList.add("text-dark")
@@ -122,6 +124,94 @@ window.addEventListener('scroll', () => {
 
 
 // FONCTIONNALITE CAROUSEL JS 
+// class Carousel {
+//     constructor(element, option= {}){
+//         this.element = element
+//         this.option = Object.assign({}, {
+//             slideToScroll: 1,
+//             sildVisible: 1
+//         }, option)
+//     }
+// }
+// document.addEventListener('DOMEContentLoaded', () => {
+//     new Carousel(document.querySelector(".carou"),{
+//         slideToScroll: 3,
+//         sildVisible: 3
+//     })
+// })
+function Carousel() {
+    let Carou = document.querySelector('.carou');
+    let btnCarou = document.querySelectorAll(".btnCarou");
+    let compt = 1;
+    let pose = ['0px','-300px','-580px','-850px'];
+    btnCarou[0].addEventListener('click', () => {
+        Carou.style.scrollLeft = "0px";
+        btnCarou.forEach(e => {
+            e.classList.replace("bg-secondary", "bg-light");
+        });
+        btnCarou[0].classList.replace("bg-light", "bg-secondary");
+    });
+    btnCarou[1].addEventListener('click', () => {
+        Carou.style.scrollLeft = "-300px";
+        btnCarou.forEach(e => {
+            e.classList.replace("bg-secondary", "bg-light");
+        });
+        btnCarou[1].classList.replace("bg-light", "bg-secondary");
+    });
+    btnCarou[2].addEventListener('click', () => {
+        Carou.style.scrollLeft = "-580px";
+        btnCarou.forEach(e => {
+            e.classList.replace("bg-secondary", "bg-light");
+        });
+        btnCarou[2].classList.replace("bg-light", "bg-secondary");
+    })
+
+    btnCarou[3].addEventListener('click', () => {
+        Carou.style.scrollLeft = '-850px';
+        btnCarou.forEach(e => {
+            e.classList.replace('bg-secondary', 'bg-light')
+        })
+        btnCarou[3].classList.replace('bg-light', 'bg-secondary');
+    });
+    btnCarou.forEach(e => {
+        e.addEventListener('mouseover', () => {
+            e.style.backgroundColor = '#bebebe';
+        });
+        e.addEventListener('mouseout', () => {
+            e.style.backgroundColor = '';
+        })
+    });
+    setInterval(() => {
+        compt = (compt + 1) % 4;
+        Carou.style.left = pose[compt];
+        btnCarou.forEach(e => {
+            e.classList.replace('bg-secondary', 'bg-light');
+        });
+        btnCarou[compt].classList.replace('bg-light', 'bg-secondary');
+
+    }, 5000);
+    window.addEventListener('keydown', event => {
+        if (event.which == '39') {
+            compt = (compt + 1) % 4;
+            Carou.style.left = pose[compt];
+        } else if (event.which == '37') {
+            
+            compt = (compt - 1) % 4;
+            if (compt < 0) {
+                compt = 3;
+            }
+            Carou.style.left = pose[compt];
+        }
+        btnCarou.forEach(e => {
+            e.classList.replace('bg-secondary', 'bg-light');
+        });
+        btnCarou[compt].classList.replace('bg-light', 'bg-secondary');
+
+    });
+}
+Carousel()
 
 
-// psect6.classList.add("text-dark")
+
+
+

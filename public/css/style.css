@@ -20370,9 +20370,13 @@ h3 {
     border-color: #dee2e6;
   }
 }
+body {
+  overflow-x: hidden;
+}
+
 header {
   background-color: white;
-  z-index: 1;
+  z-index: 2;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -20391,10 +20395,13 @@ header .nav ul {
   list-style-type: none;
   align-items: center;
 }
-header .nav ul li {
+header .nav ul .linav {
   display: flex;
   margin: 10px;
   align-items: center;
+}
+header .nav ul .linav:hover {
+  color: red;
 }
 header .nav #butBlanc {
   width: 5px;
@@ -20407,6 +20414,9 @@ header .nav #butNoir {
   height: 20px;
   background-color: black;
   margin-right: 5px;
+}
+header .nav .connexion {
+  border-radius: 5px;
 }
 
 .sect1div {
@@ -20511,10 +20521,19 @@ header .nav #butNoir {
   align-items: center;
 }
 
+.section5 {
+  overflow: hidden;
+}
+
 .carou {
-  overflow-x: hidden;
   display: flex;
-  padding-left: 10%;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+  transition: margin 1s;
+  position: relative;
+}
+.carou .ptitCarou {
+  max-width: 80%;
 }
 
 p.promo {

@@ -1,5 +1,5 @@
 .section5
-
+    overflow: hidden
     // padding-left: 40%
     // padding-right: 40%
 .carou
@@ -7,16 +7,33 @@
     // position: fixed
     // position: absolute
     // width: 140px
-    overflow-x: hidden
+   
+    
     display: flex
-    padding-left: 10%
+    flex-wrap: nowrap
+    margin: 0 auto
+    transition: margin 1s
+    position: relative
+    .ptitCarou
+        // overflow-x: hidden
+        max-width: 80%
+
+
+
+    
     
 .divimgs5
 //     width: 174.69px
 //     height: 235.09px
     // width: 140px
     // overflow: hidden
-    flex:0 0 auto
+    // flex:0 0 auto
+    width: 100%
+    transition: ease 1s
+    flex: 0 0 auto
+    // overflow: hidden
+    img
+        transform: scale(1.2)
     
 
 
@@ -31,3 +48,10 @@ p.promo
     
 .txtBarre
     text-decoration: line-through
+
+    ///////////////// 
+
+
+    // overflow-x: hidden
+    
+    

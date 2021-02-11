@@ -19414,6 +19414,10 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+body {
+  overflow-x: hidden;
+}
+
 header {
   background-color: white;
   z-index: 2;
@@ -19438,10 +19442,14 @@ header .nav ul {
   align-items: center;
 }
 
-header .nav ul li {
+header .nav ul .linav {
   display: flex;
   margin: 10px;
   align-items: center;
+}
+
+header .nav ul .linav:hover {
+  color: red;
 }
 
 header .nav #butBlanc {
@@ -19576,10 +19584,20 @@ header .nav .connexion {
   align-items: center;
 }
 
+.section5 {
+  overflow: hidden;
+}
+
 .carou {
-  overflow-x: hidden;
   display: flex;
-  padding-left: 10%;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+  transition: margin 1s;
+  position: relative;
+}
+
+.carou .ptitCarou {
+  max-width: 80%;
 }
 
 p.promo {
