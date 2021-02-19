@@ -1,6 +1,6 @@
 @font-face {
   font-family: "poppins";
-  src: url("../font/poppins/Poppins-Regular.ttf");
+  src: url("../fonts/Poppins/Poppins-Regular.ttf");
 }
 
 /*!
@@ -19464,20 +19464,46 @@ header .nav #butNoir {
   margin-right: 5px;
 }
 
-header .nav .connexion {
-  border-radius: 5px;
+header .nav #connexion {
+  border-radius: 8px;
+  background-color: #5c77f3;
+}
+
+.butX {
+  margin: 10px;
 }
 
 .divOp {
-  position: absolute;
-  top: 0;
-  bottom: 0;
+  opacity: 0.5;
+  z-index: 3;
+}
+
+.granDiv {
+  position: fixed;
   left: 0;
-  right: 0;
+  top: 0;
   width: 100%;
   height: 100%;
-  background-color: black;
-  opacity: 0.5;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 3;
+}
+
+.granDiv .menuCo {
+  position: sticky;
+  left: 30%;
+  width: 500px;
+  padding: 15px;
+  margin: 15% auto;
+  border: 1px solid #888;
+  z-index: 4;
+}
+
+.inputH {
+  border-radius: 10px;
+}
+
+.tiCO {
+  border-radius: 7px;
 }
 
 .sect1div {
@@ -19594,11 +19620,8 @@ header .nav .connexion {
   align-items: center;
 }
 
-.section5 {
-  overflow: hidden;
-}
-
 .carou {
+  overflow: hidden;
   display: flex;
   flex-wrap: nowrap;
   margin: 0 auto;
@@ -19606,8 +19629,14 @@ header .nav .connexion {
   position: relative;
 }
 
-.carou .ptitCarou {
-  max-width: 80%;
+.divimgs5 {
+  width: 100%;
+  transition: ease 1s;
+  flex: 0 0 auto;
+}
+
+.divimgs5 img {
+  transform: scale(1.2);
 }
 
 p.promo {
@@ -19621,6 +19650,10 @@ p.promo {
 
 .txtBarre {
   text-decoration: line-through;
+}
+
+.btnCarou {
+  background-color: #acc3ca;
 }
 
 .section6 {
@@ -19675,6 +19708,7 @@ p.promo {
 }
 
 body {
+  position: relative;
   overflow-x: hidden;
 }
 

@@ -105,13 +105,16 @@ butX.addEventListener('click', () => {
     granDiv.classList.add('d-none')
     i++
 })
-// granDiv.addEventListener('click', () => {
-//     menuCo.classList.remove('d-block')
-//     menuCo.classList.add('d-none')
-//     granDiv.classList.remove('d-block')
-//     granDiv.classList.add('d-none')
-//     i++
-// })
+granDiv.addEventListener('click', () => {
+    if (i%2 == 1) {
+        menuCo.classList.remove('d-block')
+        menuCo.classList.add('d-none')
+        granDiv.classList.remove('d-block')
+        granDiv.classList.add('d-none')
+        i++
+    }
+    
+})
 console.log(i);
 // butX.addEventListener('click', () => {
 //     // menuCo.className=("menuCo mt-7 col-12 text-center dropdown-menu d-block")

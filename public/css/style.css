@@ -1,4 +1,8 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "poppins";
+  src: url("../fonts/Poppins/Poppins-Regular.ttf");
+}
 /*!
  * Font Awesome Free 5.15.2 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -20409,8 +20413,9 @@ header .nav #butNoir {
   background-color: black;
   margin-right: 5px;
 }
-header .nav .connexion {
-  border-radius: 5px;
+header .nav #connexion {
+  border-radius: 8px;
+  background-color: #5c77f3;
 }
 
 .butX {
@@ -20579,6 +20584,10 @@ p.promo {
 
 .txtBarre {
   text-decoration: line-through;
+}
+
+.btnCarou {
+  background-color: #acc3ca;
 }
 
 .section6 {
