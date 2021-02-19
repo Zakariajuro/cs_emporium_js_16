@@ -1,5 +1,3 @@
-// const { Carousel } = require("bootstrap")
-
 // CIBLAGE DES ELEMENTS HTML
 let buttonNoir = document.querySelector("#butNoir")
 let buttonBlanc = document.querySelector("#butBlanc")
@@ -63,29 +61,58 @@ buttonBlanc.addEventListener('click', () => {
 // FONCTIONNALITE JS BUTTON CONNEXION
 
 let connect = document.querySelector("#connexion")
+let granDiv = document.querySelector(".granDiv")
 let menuCo = document.querySelector(".menuCo")
 let butX = document.querySelector(".butX")
 
-connect.addEventListener('click', () => {
-    menuCo.className= ("menuCo mt-7 dropdown-menu col-12 text-center d-none", "menuCo mt-7 dropdown-menu col-12 text-center d-block")
-    // document.body.style.opacity="0.5"
-    document.body.style.overflow="hidden"
-    if (menuCo.className == "menuCo mt-7 dropdown-menu col-12 text-center d-block") {
-        butX.addEventListener('click', () => {
-            menuCo.className= ("menuCo mt-7 dropdown-menu col-12 text-center d-none")
-            document.body.style.overflow="auto"
-            document.body.style.opacity="1"
-        })
-        connect.addEventListener('click', () => {
-            menuCo.className= ("menuCo mt-7 dropdown-menu col-12 text-center d-block", "menuCo mt-7 dropdown-menu col-12 text-center d-none")
-            if (menuCo.className == "menuCo mt-7 dropdown-menu col-12 text-center d-none") {
-                connect.addEventListener('click', () => {
-                    menuCo.className= ("menuCo mt-7 dropdown-menu col-12 text-center d-none", "menuCo mt-7 dropdown-menu col-12 text-center d-block")
-                })
-            }
-        })
-    }
+
+// connect.addEventListener('click', () => {
+//     menuCo.className= ("menuCo  bg-light d-none", "menuCo  bg-light d-block")
+//     // document.body.style.opacity="0.5"
+//     granDiv.className=("granDiv d-none", "granDiv d-block")
+//     document.body.style.overflow="hidden"
+//     if (menuCo.className == "menuCo  bg-light d-block") {
+//         butX.addEventListener('click', () => {
+//             menuCo.className= ("menuCo  bg-light d-none")
+//             document.body.style.overflow="auto"
+//             granDiv.className=("granDiv d-block", "granDiv d-none")
+//         })
+//         connect.addEventListener('click', () => {
+//             menuCo.className= ("menuCo  bg-light d-block", "menuCo  bg-light d-none")
+//             if (menuCo.className == "menuCo  bg-light d-none") {
+//                 connect.addEventListener('click', () => {
+//                     menuCo.className= ("menuCo  bg-light d-none", "menuCo  bg-light d-block")
+//                     granDiv.className=("granDiv d-none", "granDiv d-block")
+//                 })
+//             }
+//         })
+//     }
+// })
+let i = 0
+connect.addEventListener('click' , () => {
+    if (i%2 == 0) {
+        menuCo.classList.add('d-block')
+        menuCo.classList.remove('d-none')
+        granDiv.classList.add('d-block')
+        granDiv.classList.remove('d-none')
+        i++
+    } 
 })
+butX.addEventListener('click', () => {
+    menuCo.classList.remove('d-block')
+    menuCo.classList.add('d-none')
+    granDiv.classList.remove('d-block')
+    granDiv.classList.add('d-none')
+    i++
+})
+// granDiv.addEventListener('click', () => {
+//     menuCo.classList.remove('d-block')
+//     menuCo.classList.add('d-none')
+//     granDiv.classList.remove('d-block')
+//     granDiv.classList.add('d-none')
+//     i++
+// })
+console.log(i);
 // butX.addEventListener('click', () => {
 //     // menuCo.className=("menuCo mt-7 col-12 text-center dropdown-menu d-block")
 //     if ( menuCo.className == "menuCo mt-7 col-12 text-center dropdown-menu d-block" ) {
@@ -123,95 +150,21 @@ window.addEventListener('scroll', () => {
 })
 
 
-// FONCTIONNALITE CAROUSEL JS 
-// class Carousel {
-//     constructor(element, option= {}){
-//         this.element = element
-//         this.option = Object.assign({}, {
-//             slideToScroll: 1,
-//             sildVisible: 1
-//         }, option)
-//     }
-// }
-// document.addEventListener('DOMEContentLoaded', () => {
-//     new Carousel(document.querySelector(".carou"),{
-//         slideToScroll: 3,
-//         sildVisible: 3
-//     })
-// })
-function Carousel() {
-    let Carou = document.querySelector('.carou');
-    let btnCarou = document.querySelectorAll(".btnCarou");
-    let compt = 1;
-    let pose = ['0px','-300px','-580px','-850px'];
-    btnCarou[0].addEventListener('click', () => {
-        Carou.style.scrollLeft = "0px";
-        btnCarou.forEach(e => {
-            e.classList.replace("bg-secondary", "bg-light");
-        });
-        btnCarou[0].classList.replace("bg-light", "bg-secondary");
-    });
-    btnCarou[1].addEventListener('click', () => {
-        Carou.style.scrollLeft = "-300px";
-        btnCarou.forEach(e => {
-            e.classList.replace("bg-secondary", "bg-light");
-        });
-        btnCarou[1].classList.replace("bg-light", "bg-secondary");
-    });
-    btnCarou[2].addEventListener('click', () => {
-        Carou.style.scrollLeft = "-580px";
-        btnCarou.forEach(e => {
-            e.classList.replace("bg-secondary", "bg-light");
-        });
-        btnCarou[2].classList.replace("bg-light", "bg-secondary");
-    })
+let imgCarou = document.querySelector('.ptitCarou')
+console.log(imgCarou);
+let btnCarou = document.querySelectorAll(".btnCarou");
 
-    btnCarou[3].addEventListener('click', () => {
-        Carou.style.scrollLeft = '-850px';
-        btnCarou.forEach(e => {
-            e.classList.replace('bg-secondary', 'bg-light')
-        })
-        btnCarou[3].classList.replace('bg-light', 'bg-secondary');
-    });
-    btnCarou.forEach(e => {
-        e.addEventListener('mouseover', () => {
-            e.style.backgroundColor = '#bebebe';
-        });
-        e.addEventListener('mouseout', () => {
-            e.style.backgroundColor = '';
-        })
-    });
-    setInterval(() => {
-        compt = (compt + 1) % 4;
-        Carou.style.left = pose[compt];
-        btnCarou.forEach(e => {
-            e.classList.replace('bg-secondary', 'bg-light');
-        });
-        btnCarou[compt].classList.replace('bg-light', 'bg-secondary');
+btnCarou[0].addEventListener('click', ()=> {
+    imgCarou.style = "transform:translateX(-300px); transition:2s"    
+})
 
-    }, 5000);
-    window.addEventListener('keydown', event => {
-        if (event.which == '39') {
-            compt = (compt + 1) % 4;
-            Carou.style.left = pose[compt];
-        } else if (event.which == '37') {
-            
-            compt = (compt - 1) % 4;
-            if (compt < 0) {
-                compt = 3;
-            }
-            Carou.style.left = pose[compt];
-        }
-        btnCarou.forEach(e => {
-            e.classList.replace('bg-secondary', 'bg-light');
-        });
-        btnCarou[compt].classList.replace('bg-light', 'bg-secondary');
-
-    });
-}
-Carousel()
-
-
-
-
-
+btnCarou[1].addEventListener('click', ()=> {
+    imgCarou.style = "transform:translateX(-900px); transition:2s"    
+})
+btnCarou[2].addEventListener('click', ()=> {
+    imgCarou.style = "transform:translateX(-1500px); transition:2s"
+    
+})
+btnCarou[3].addEventListener('click', ()=> {
+    imgCarou.style = "transform:translateX(0%); transition:2s"
+})

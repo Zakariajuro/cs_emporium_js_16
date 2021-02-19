@@ -1,8 +1,4 @@
 @charset "UTF-8";
-@font-face {
-  font-family: "poppins";
-  src: url("../font/poppins/Poppins-Regular.ttf");
-}
 /*!
  * Font Awesome Free 5.15.2 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -20417,6 +20413,42 @@ header .nav .connexion {
   border-radius: 5px;
 }
 
+.butX {
+  margin: 10px;
+}
+
+.divOp {
+  opacity: 0.5;
+  z-index: 3;
+}
+
+.granDiv {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 3;
+}
+.granDiv .menuCo {
+  position: sticky;
+  left: 30%;
+  width: 500px;
+  padding: 15px;
+  margin: 15% auto;
+  border: 1px solid #888;
+  z-index: 4;
+}
+
+.inputH {
+  border-radius: 10px;
+}
+
+.tiCO {
+  border-radius: 7px;
+}
+
 .sect1div {
   background-color: #faf9f9;
   margin-top: 5%;
@@ -20519,19 +20551,21 @@ header .nav .connexion {
   align-items: center;
 }
 
-.section5 {
-  overflow: hidden;
-}
-
 .carou {
+  overflow: hidden;
   display: flex;
   flex-wrap: nowrap;
   margin: 0 auto;
   transition: margin 1s;
   position: relative;
 }
-.carou .ptitCarou {
-  max-width: 80%;
+.divimgs5 {
+  width: 100%;
+  transition: ease 1s;
+  flex: 0 0 auto;
+}
+.divimgs5 img {
+  transform: scale(1.2);
 }
 
 p.promo {
@@ -20595,6 +20629,7 @@ p.promo {
 }
 
 body {
+  position: relative;
   overflow-x: hidden;
 }
 
